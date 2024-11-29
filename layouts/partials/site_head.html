@@ -127,10 +127,10 @@
       })(window, document, "clarity", "script", "{{ site.Params.microsoft_clarity }}");
     </script>
   {{ end }}
-  {{ if site.GoogleAnalytics }}
+  {{ if site.Config.Services.GoogleAnalytics.ID }}
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', '{{ site.GoogleAnalytics }}', 'auto');
+      ga('create', '{{ site.Config.Services.GoogleAnalytics.ID }}', 'auto');
       {{ if site.Params.privacy_pack }}ga('set', 'anonymizeIp', true);{{ end }}
       ga('require', 'eventTracker');
       ga('require', 'outboundLinkTracker');
