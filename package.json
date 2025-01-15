@@ -4,7 +4,7 @@
   "description": "Hugo theme for Academic. Create a beautifully simple website for academics and researchers.",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^5.0.0"
   },
   "devDependencies": {},
   "scripts": {
